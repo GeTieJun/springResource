@@ -5,13 +5,14 @@ import com.getiejun.spring.entity.Color;
 import com.getiejun.spring.entity.Person;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.annotation.Configuration;
 
 public class configBeanTest {
 
     public static void main(String[] args) {
         //printPersonBean();
         printAllBean();
-        factoryBeanTest();
+        //factoryBeanTest();
         //scopeTest();
         //lazyTest();
     }
