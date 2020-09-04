@@ -7,11 +7,36 @@ public class Test {
 
     public static void main(String[] args) throws InterruptedException {
         //arrayListTest();
-        Object key = "abcdef";
-        int h;
-        System.out.println (key.hashCode());
-        System.out.println (key.hashCode() >>> 16);
-        System.out.println ((key == null) ? 0 : (h = key.hashCode()) ^ (h >>> 16));
+        testIfElse();
+    }
+
+    public static void testIfElse() {
+        int i = 5;
+        if(i > 1) {
+            System.out.println("1");
+        } else if( i > 3) {
+            System.out.println("3");
+        } else {
+            System.out.println("5");
+        }
+    }
+
+    public static void hashTable() {
+        Hashtable<String, String> table = new Hashtable<String, String>();
+        table.put("1", "1");
+    }
+
+    public static void hashMapTest() {
+        HashMap<String, String> map = new HashMap<String, String>();
+        Collections.synchronizedMap(map);
+        map.put("1", "1");
+        map.remove("1");
+    }
+
+    public static void TreeSetTest() {
+        TreeMap<String, Integer> treeMap = new TreeMap<String, Integer>();
+        treeMap.put("xiaoming", 1);
+        TreeSet<Integer> treeSet = new TreeSet<Integer>();
     }
 
     public static void hashSetTest() {
