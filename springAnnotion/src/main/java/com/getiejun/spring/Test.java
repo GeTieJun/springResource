@@ -1,13 +1,18 @@
 package com.getiejun.spring;
 
 import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentLinkedQueue;
 
 public class Test {
 
     public static void main(String[] args) throws InterruptedException {
         //arrayListTest();
-        testIfElse();
+    }
+
+    public static void currentHashMapTest() {
+        ConcurrentHashMap<String, String> map = new ConcurrentHashMap<String, String>();
+        map.put("1", "1");
     }
 
     public static void testIfElse() {
